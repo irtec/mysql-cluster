@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+  mysqla:
+    image: 'mysql:5.7.29'
+    ports:
+      - '3311:3306'
+    networks:
+      - mysqlab
+    environment:
+      - "MYSQL_ROOT_PASSWORD=root"
+    volumes:
+      - './config/mysql-otter-a:/etc/mysql/conf.d/'
+  mysqlb:
+    image: 'mysql:5.7.29'
+    ports:
+      - '3312:3306'
+    networks:
+      - mysqlab
+    environment:
+      - "MYSQL_ROOT_PASSWORD=root"
+    volumes:
+      - './config/mysql-otter-b:/etc/mysql/conf.d/'
+
+
+networks:
+  mysqlab:
+    name: mysqlab

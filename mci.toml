@@ -1,0 +1,18 @@
+Master1Addr = "mm1" # Network address of Master1
+Master2Addr = "mm2" # Network address of Master2
+SlaveAddrs = [] # Slave's network address
+Password = "root" # Root user password
+Port = 3306 # MySQL port number
+#MySQLDumpCmd = "./mysqldump" # mysqldump command path, default mysqldump
+#MySQLCmd = "./mysql" # mysql command path, default mysql
+ReplUsr = "repl" # Copy username, default repl
+ReplPassword = "" # Copy the user password, if not specified, it will be automatically generated
+Debug = false # Test mode, only print SQL and HAProxy configuration, do not actually execute
+LocalAddr = "" # Specify the network address of the machine, if not specified, it will be automatically obtained from the network card
+MySQLCnf = "/etc/mysql/conf.d/my.cnf" # The address of the MySQL configuration file
+MySQLRestartShell = "/etc/init.d/mysql restart" # MySQL restart command, systemctl restart mysqld
+HAProxyCfg = "/usr/local/etc/haproxy/haproxy.cfg" # HAProxy configuration file address
+# HAProxyCfg = "/etc/opt/rh/rh-haproxy18/haproxy/haproxy.cfg" # HAProxy configuration file address
+HAProxyRestartShell = "" # HAProxy restart command
+# HAProxyRestartShell = "systemctl restart haproxy" # HAProxy restart command
+# systemctl status haproxy
