@@ -6,22 +6,6 @@ sleep 15
 
 echo "Create MySQL Servers (master / master repl)"
 
-# https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html#option_mysql_execute
-# --skip-column-names, -N
-
-# --no-auto-rehash, -A
-# Enable automatic rehashing. This option is on by default, which enables database, table, and column name completion.
-
-# --execute=statement, -e statement
-
-# --verbose, -v
-
-#Verbose mode. Produce more output about what the program does. This option can be given multiple times to produce more and more output.
-#(For example, -v -v -v produces table output format even in batch mode.)
-
-# Suppress warning messages from MySQL in shell script
-# Warning: Using a password on the command line interface can be insecure.
-# https://stackoverflow.com/a/24188878 https://unix.stackexchange.com/a/334971
 export MYSQL_PWD=$MYSQL_PWD;
 
 echo "* Create replication user"
