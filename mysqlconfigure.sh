@@ -6,7 +6,6 @@ sleep 15
 
 echo "Create MySQL Servers (master / master repl)"
 
-
 # https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html#option_mysql_execute
 # --skip-column-names, -N
 
